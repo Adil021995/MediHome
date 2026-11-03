@@ -869,3 +869,32 @@ html,body{max-width:100%;overflow-x:clip}.hero{max-width:100%;overflow:hidden}.h
  .header-tools .tool-link,.header-tools .mobile-menu{flex-basis:34px;width:34px;height:34px;min-width:34px;border-radius:12px}
  .header-tools .tool-link svg,.header-tools .mobile-menu svg{width:18px;height:18px}
 }
+
+/* Compact category banner when a visitor searches for a category name */
+.category-hero-search{padding:15px 0 18px}
+.category-hero-search .category-hero-inner{display:block;min-height:0;padding:0}
+.category-hero-search .category-hero-art{display:none}
+.category-hero-search .category-hero-copy{position:relative;max-width:none;padding:0 0 0 62px}
+.category-hero-search .category-hero-copy:before{position:absolute;left:3px;top:30px;display:grid;place-items:center;width:44px;height:44px;border:1px solid #ffffff45;border-radius:15px;background:linear-gradient(145deg,#ffffff30,#ffffff12);box-shadow:0 8px 20px #062d2925;color:#fff;font:700 25px/1 var(--sans)}
+.category-hero-search.kids-care .category-hero-copy:before{content:'✳'}
+.category-hero-search.personal-care .category-hero-copy:before{content:'✧'}
+.category-hero-search.womens-care .category-hero-copy:before{content:'✿'}
+.category-hero-search.health-nutrition .category-hero-copy:before{content:'✦'}
+.category-hero-search.health-devices .category-hero-copy:before{content:'⌁'}
+.category-hero-search.ayurveda .category-hero-copy:before{content:'☘'}
+.category-hero-search .category-hero-copy .breadcrumbs{margin-bottom:7px}
+.category-hero-search .category-hero-copy>.eyebrow{font-size:9px;letter-spacing:1.4px}
+.category-hero-search .category-hero-copy h1{margin:5px 0;font-size:clamp(25px,3.2vw,34px);line-height:1.15;letter-spacing:-.7px}
+.category-hero-search .category-hero-copy h1 br{display:none}
+.category-hero-search .category-hero-copy>p{max-width:760px;margin:5px 0 0;font-size:13px;line-height:1.5}
+.category-hero-search .category-hero-actions{gap:10px;margin-top:10px}
+.category-hero-search .category-hero-actions .button{min-height:36px;height:36px;padding:0 13px;font-size:11px}
+.category-hero-search .category-hero-meta{display:none}
+@media(max-width:760px){
+ .category-hero-search{padding:12px 0 14px}
+ .category-hero-search .category-hero-copy{padding-left:52px}
+ .category-hero-search .category-hero-copy:before{left:0;top:28px;width:40px;height:40px;border-radius:13px;font-size:22px}
+ .category-hero-search .category-hero-copy h1{font-size:clamp(24px,7vw,31px)}
+ .category-hero-search .category-hero-copy>p{font-size:12px}
+ .category-hero-search .category-hero-actions{flex-wrap:wrap}
+}
