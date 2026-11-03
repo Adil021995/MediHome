@@ -815,3 +815,28 @@ html,body{max-width:100%;overflow-x:clip}.hero{max-width:100%;overflow:hidden}.h
  .hero-dots{gap:4px}
  #hero-count{font-size:8px}
 }
+
+/* Three user-supplied images for the mobile-only homepage slider */
+@media(max-width:760px){
+ .hero-slide{padding:12px 12px 15px;gap:0}
+ .hero-art{order:-1;flex:none;width:auto;height:clamp(225px,52vw,300px);min-height:0;margin:0 0 2px;border:1px solid #c7dfdc;border-right:1px solid #c7dfdc;border-radius:23px 9px 23px 9px;background-position:center;background-repeat:no-repeat;background-size:cover;box-shadow:inset 0 -18px 30px rgba(28,76,69,.05)}
+ .hero-art-herbal{background-color:#83bfd0;background-image:url("assets/mobile-banner-1-team.jpg");background-position:center 48%}
+ .hero-art-baby{background-color:#eaf7f5;background-image:url("assets/mobile-banner-2-consult.jpg");background-position:center 54%}
+ .hero-art-devices{background-color:#d8eef4;background-image:url("assets/mobile-banner-3-clinicians.jpg");background-position:center 43%}
+ .hero-art>*{display:none!important}
+ .hero-copy{order:1;padding:22px 10px 10px}
+ .hero h1{max-width:100%;font-size:clamp(33px,7.8vw,40px);line-height:1.04;letter-spacing:-1.65px;margin:8px 0 9px}
+ .hero-copy>p{max-width:560px;font-size:13px;line-height:1.55}
+ .hero-actions{margin-top:13px}
+ .hero-actions .button{min-height:44px;height:44px;border-radius:10px;font-size:11px}
+ .hero-feature-row{margin-top:11px}
+}
+@media(max-width:430px){
+ .hero-slide{padding:10px 10px 13px}
+ .hero-art{height:clamp(210px,60vw,260px);border-radius:20px 8px 20px 8px}
+ .hero-copy{padding:20px 7px 8px}
+ .hero h1{font-size:clamp(30px,8.3vw,35px);letter-spacing:-1.3px}
+ .hero-copy>p{font-size:12px;line-height:1.5}
+ .hero-actions{margin-top:11px}
+ .hero-actions .button{min-height:42px;height:42px;font-size:10px}
+}
